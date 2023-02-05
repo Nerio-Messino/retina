@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['systemcoreclock_94',['SystemCoreClock',['../port__system_8c.html#aa3cd3e43291e81e795d642b79b6088e6',1,'port_system.c']]]
+  ['msticks_254',['msTicks',['../port__system_8c.html#a0a6e5e17fcb15f3922e278025acabfa2',1,'port_system.c']]]
 ];

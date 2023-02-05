@@ -96,9 +96,7 @@ $(document).ready(function(){initNavTree('port__system_8h.html',''); initResizab
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;stm32f4xx.h&quot;</code><br />
-</div>
-<p><a href="port__system_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ad8e7767483a0c8f878cab29ad46ec656"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#ad8e7767483a0c8f878cab29ad46ec656">BIT_POS_TO_MASK</a>(x)&#160;&#160;&#160;(0x01 &lt;&lt; x)</td></tr>
@@ -135,6 +133,16 @@ Macros</h2></td></tr>
 <tr class="separator:abf55427b22854ab80d5f98da0a3eeb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a559cb34d5e497c70a257bbd8d53bdb59"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#a559cb34d5e497c70a257bbd8d53bdb59">GPIO_PUPDR_PDOWN</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="separator:a559cb34d5e497c70a257bbd8d53bdb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f803abb36eac6342cad8854fbc1e10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#ab1f803abb36eac6342cad8854fbc1e10">TRIGGER_RISING_EDGE</a></td></tr>
+<tr class="separator:ab1f803abb36eac6342cad8854fbc1e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1968e3b27d1799d15d4183db2267d4c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#a1968e3b27d1799d15d4183db2267d4c4">TRIGGER_FALLING_EDGE</a></td></tr>
+<tr class="separator:a1968e3b27d1799d15d4183db2267d4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce133b438a7f41ce84fed71ea845994"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#a5ce133b438a7f41ce84fed71ea845994">TRIGGER_BOTH_EDGE</a></td></tr>
+<tr class="separator:a5ce133b438a7f41ce84fed71ea845994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61a653b05cde66da4d063eac13caf54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#ae61a653b05cde66da4d063eac13caf54">TRIGGER_ENABLE_EVENT_REQ</a></td></tr>
+<tr class="separator:ae61a653b05cde66da4d063eac13caf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a913206b89f97752e3fac1ba0b2320aa5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#a913206b89f97752e3fac1ba0b2320aa5">TRIGGER_ENABLE_INTERR_REQ</a></td></tr>
+<tr class="separator:a913206b89f97752e3fac1ba0b2320aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -150,37 +158,38 @@ Functions</h2></td></tr>
 <tr class="memitem:aea53d22d21120e209983ae0753b35d87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#aea53d22d21120e209983ae0753b35d87">port_system_delay_until_ms</a> (uint32_t *p_t, uint32_t ms)</td></tr>
 <tr class="memdesc:aea53d22d21120e209983ae0753b35d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for some milliseconds from a time reference.  <a href="port__system_8h.html#aea53d22d21120e209983ae0753b35d87">More...</a><br /></td></tr>
 <tr class="separator:aea53d22d21120e209983ae0753b35d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eed701d50844fcd825c673999e44f2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#a1eed701d50844fcd825c673999e44f2a">port_system_gpio_config</a> (GPIO_TypeDef *port, uint8_t pin, uint8_t mode, uint8_t pupd)</td></tr>
-<tr class="memdesc:a1eed701d50844fcd825c673999e44f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the mode and pull of a GPIO.  <a href="port__system_8h.html#a1eed701d50844fcd825c673999e44f2a">More...</a><br /></td></tr>
-<tr class="separator:a1eed701d50844fcd825c673999e44f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0922d8c6498976ec4a714829a70824f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#ad0922d8c6498976ec4a714829a70824f">port_system_gpio_config_alternate</a> (GPIO_TypeDef *port, uint8_t pin, uint8_t alternate)</td></tr>
-<tr class="memdesc:ad0922d8c6498976ec4a714829a70824f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the alternate function of a GPIO.  <a href="port__system_8h.html#ad0922d8c6498976ec4a714829a70824f">More...</a><br /></td></tr>
-<tr class="separator:ad0922d8c6498976ec4a714829a70824f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9e19ee5de52fee7caf873af7ea6317d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#ac9e19ee5de52fee7caf873af7ea6317d">port_system_gpio_config_exti</a> (GPIO_TypeDef *port, uint8_t pin, uint32_t mode)</td></tr>
-<tr class="memdesc:ac9e19ee5de52fee7caf873af7ea6317d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the external interruption or event of a GPIO.  <a href="port__system_8h.html#ac9e19ee5de52fee7caf873af7ea6317d">More...</a><br /></td></tr>
-<tr class="separator:ac9e19ee5de52fee7caf873af7ea6317d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedba1c00f3e11b81226406c03db75c14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#aedba1c00f3e11b81226406c03db75c14">port_system_gpio_config</a> (GPIO_TypeDef *p_port, uint8_t pin, uint8_t mode, uint8_t pupd)</td></tr>
+<tr class="memdesc:aedba1c00f3e11b81226406c03db75c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the mode and pull of a GPIO.  <a href="port__system_8h.html#aedba1c00f3e11b81226406c03db75c14">More...</a><br /></td></tr>
+<tr class="separator:aedba1c00f3e11b81226406c03db75c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b13031e799a6a96aa8143cb4432f94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#a69b13031e799a6a96aa8143cb4432f94">port_system_gpio_config_alternate</a> (GPIO_TypeDef *p_port, uint8_t pin, uint8_t alternate)</td></tr>
+<tr class="memdesc:a69b13031e799a6a96aa8143cb4432f94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the alternate function of a GPIO.  <a href="port__system_8h.html#a69b13031e799a6a96aa8143cb4432f94">More...</a><br /></td></tr>
+<tr class="separator:a69b13031e799a6a96aa8143cb4432f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa8d7afcf0ca35642667612a2dc0b27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#aaaa8d7afcf0ca35642667612a2dc0b27">port_system_gpio_config_exti</a> (GPIO_TypeDef *p_port, uint8_t pin, uint32_t mode)</td></tr>
+<tr class="memdesc:aaaa8d7afcf0ca35642667612a2dc0b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the external interruption or event of a GPIO.  <a href="port__system_8h.html#aaaa8d7afcf0ca35642667612a2dc0b27">More...</a><br /></td></tr>
+<tr class="separator:aaaa8d7afcf0ca35642667612a2dc0b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0db5ab1cfb0707984ad278b002fcf7fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#a0db5ab1cfb0707984ad278b002fcf7fc">port_system_gpio_exti_enable</a> (uint8_t pin, uint8_t priority, uint8_t subpriority)</td></tr>
 <tr class="memdesc:a0db5ab1cfb0707984ad278b002fcf7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable interrupts of a GPIO line (pin)  <a href="port__system_8h.html#a0db5ab1cfb0707984ad278b002fcf7fc">More...</a><br /></td></tr>
 <tr class="separator:a0db5ab1cfb0707984ad278b002fcf7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57047fe83ed119973a2ee0891e790459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#a57047fe83ed119973a2ee0891e790459">port_system_gpio_exti_disable</a> (uint8_t pin)</td></tr>
 <tr class="memdesc:a57047fe83ed119973a2ee0891e790459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable interrupts of a GPIO line (pin)  <a href="port__system_8h.html#a57047fe83ed119973a2ee0891e790459">More...</a><br /></td></tr>
 <tr class="separator:a57047fe83ed119973a2ee0891e790459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fdfc0b2269b65577aab87d7efc4a0ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#a8fdfc0b2269b65577aab87d7efc4a0ff">port_system_gpio_read</a> (GPIO_TypeDef *port, uint8_t pin)</td></tr>
-<tr class="memdesc:a8fdfc0b2269b65577aab87d7efc4a0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the digital value of a GPIO.  <a href="port__system_8h.html#a8fdfc0b2269b65577aab87d7efc4a0ff">More...</a><br /></td></tr>
-<tr class="separator:a8fdfc0b2269b65577aab87d7efc4a0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c755bd58b0daef4e39462f1315be2ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#a7c755bd58b0daef4e39462f1315be2ce">port_system_gpio_toggle</a> (GPIO_TypeDef *port, uint8_t pin)</td></tr>
-<tr class="memdesc:a7c755bd58b0daef4e39462f1315be2ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle the value of a GPIO.  <a href="port__system_8h.html#a7c755bd58b0daef4e39462f1315be2ce">More...</a><br /></td></tr>
-<tr class="separator:a7c755bd58b0daef4e39462f1315be2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5223335de29d50a1c21d7937ac355c9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#a5223335de29d50a1c21d7937ac355c9b">port_system_gpio_write</a> (GPIO_TypeDef *port, uint8_t pin, bool value)</td></tr>
-<tr class="memdesc:a5223335de29d50a1c21d7937ac355c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a digital value in a GPIO atomically.  <a href="port__system_8h.html#a5223335de29d50a1c21d7937ac355c9b">More...</a><br /></td></tr>
-<tr class="separator:a5223335de29d50a1c21d7937ac355c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c2ddb6c83b821abe663b86bc76a08e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#a67c2ddb6c83b821abe663b86bc76a08e">port_system_gpio_read</a> (GPIO_TypeDef *p_port, uint8_t pin)</td></tr>
+<tr class="memdesc:a67c2ddb6c83b821abe663b86bc76a08e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the digital value of a GPIO.  <a href="port__system_8h.html#a67c2ddb6c83b821abe663b86bc76a08e">More...</a><br /></td></tr>
+<tr class="separator:a67c2ddb6c83b821abe663b86bc76a08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac917b3dece5f90ce4c76aaa36cec3553"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#ac917b3dece5f90ce4c76aaa36cec3553">port_system_gpio_toggle</a> (GPIO_TypeDef *p_port, uint8_t pin)</td></tr>
+<tr class="memdesc:ac917b3dece5f90ce4c76aaa36cec3553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle the value of a GPIO.  <a href="port__system_8h.html#ac917b3dece5f90ce4c76aaa36cec3553">More...</a><br /></td></tr>
+<tr class="separator:ac917b3dece5f90ce4c76aaa36cec3553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc1d118b9ff134fe7f982a52b6a4049"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#a7bc1d118b9ff134fe7f982a52b6a4049">port_system_gpio_write</a> (GPIO_TypeDef *p_port, uint8_t pin, bool value)</td></tr>
+<tr class="memdesc:a7bc1d118b9ff134fe7f982a52b6a4049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a digital value in a GPIO atomically.  <a href="port__system_8h.html#a7bc1d118b9ff134fe7f982a52b6a4049">More...</a><br /></td></tr>
+<tr class="separator:a7bc1d118b9ff134fe7f982a52b6a4049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf3bdd59bb68456d3c8849452f541e87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="port__system_8h.html#acf3bdd59bb68456d3c8849452f541e87">port_gpio_alternate_config</a> (GPIO_TypeDef *p_port, uint8_t pin, uint8_t alternate)</td></tr>
+<tr class="memdesc:acf3bdd59bb68456d3c8849452f541e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the alternate function of a GPIO.  <a href="port__system_8h.html#acf3bdd59bb68456d3c8849452f541e87">More...</a><br /></td></tr>
+<tr class="separator:acf3bdd59bb68456d3c8849452f541e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header for <a class="el" href="port__system_8c.html" title="File that defines the functions that are related to the access to the specific HW of the microcontrol...">port_system.c</a> file. </p>
 <dl class="section author"><dt>Author</dt><dd>Sistemas Digitales II </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2023-01-01 </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ab10023bfece24287e8d301c535c5eaca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab10023bfece24287e8d301c535c5eaca">&#9670;&nbsp;</a></span>BASE_MASK_TO_POS</h2>
@@ -209,8 +218,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Move a mask defined in the LSBs to upper positions by shifting left p bits </p>
 
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00023">23</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
-
 </div>
 </div>
 <a id="ad8e7767483a0c8f878cab29ad46ec656"></a>
@@ -229,8 +236,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Convert the index of a bit into a mask by left shifting </p>
-
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00022">22</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
 
 </div>
 </div>
@@ -251,8 +256,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Compute the IRQ number associated to a GPIO pin </p>
 
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00024">24</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
-
 </div>
 </div>
 <a id="ab45de352a652bb6560df599b97fc5fc7"></a>
@@ -267,8 +270,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>GPIO as alternate function </p>
-
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00044">44</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
 
 </div>
 </div>
@@ -285,8 +286,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>GPIO as analog </p>
 
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00045">45</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
-
 </div>
 </div>
 <a id="a995e5bd9af1641f9e20d64803b969ef3"></a>
@@ -301,8 +300,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>GPIO as input </p>
-
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00042">42</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
 
 </div>
 </div>
@@ -319,8 +316,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>GPIO as output </p>
 
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00043">43</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
-
 </div>
 </div>
 <a id="a04e8f9e8675a2f61021a23cbcae85a20"></a>
@@ -335,8 +330,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>GPIO no pull up or down </p>
-
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00047">47</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
 
 </div>
 </div>
@@ -353,8 +346,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>GPIO no pull down </p>
 
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00049">49</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
-
 </div>
 </div>
 <a id="abf55427b22854ab80d5f98da0a3eeb34"></a>
@@ -369,8 +360,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>GPIO no pull up </p>
-
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00048">48</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
 
 </div>
 </div>
@@ -387,8 +376,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Logic 1 </p>
 
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00039">39</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
-
 </div>
 </div>
 <a id="ab811d8c6ff3a505312d3276590444289"></a>
@@ -403,8 +390,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Logic 0 </p>
-
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00040">40</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
 
 </div>
 </div>
@@ -421,8 +406,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>0 bit for pre-emption priority, \ 4 bits for subpriority </p>
 
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00030">30</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
-
 </div>
 </div>
 <a id="a5b7ebf3d3bc5d33a6cd8b3fb3903cf4f"></a>
@@ -437,8 +420,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>4 bits for pre-emption priority, \ 0 bit for subpriority </p>
-
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00032">32</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
 
 </div>
 </div>
@@ -455,8 +436,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Scale 3 mode: the maximum value of fHCLK is 120 MHz. </p>
 
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00036">36</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
-
 </div>
 </div>
 <a id="a2493eaca64054f112ecca77da42783bc"></a>
@@ -471,8 +450,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Default HSI calibration trimming value </p>
-
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00028">28</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
 
 </div>
 </div>
@@ -489,11 +466,136 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Freqency in kHz of the System tick </p>
 
-<p class="definition">Definition at line <a class="el" href="port__system_8h_source.html#l00029">29</a> of file <a class="el" href="port__system_8h_source.html">port_system.h</a>.</p>
+</div>
+</div>
+<a id="a5ce133b438a7f41ce84fed71ea845994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ce133b438a7f41ce84fed71ea845994">&#9670;&nbsp;</a></span>TRIGGER_BOTH_EDGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRIGGER_BOTH_EDGE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Interrupt mask for detecting both rising and falling edges </p>
+
+</div>
+</div>
+<a id="ae61a653b05cde66da4d063eac13caf54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae61a653b05cde66da4d063eac13caf54">&#9670;&nbsp;</a></span>TRIGGER_ENABLE_EVENT_REQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRIGGER_ENABLE_EVENT_REQ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Interrupt mask to enable event requests </p>
+
+</div>
+</div>
+<a id="a913206b89f97752e3fac1ba0b2320aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a913206b89f97752e3fac1ba0b2320aa5">&#9670;&nbsp;</a></span>TRIGGER_ENABLE_INTERR_REQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRIGGER_ENABLE_INTERR_REQ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Interrupt mask to enable interrupt requests </p>
+
+</div>
+</div>
+<a id="a1968e3b27d1799d15d4183db2267d4c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1968e3b27d1799d15d4183db2267d4c4">&#9670;&nbsp;</a></span>TRIGGER_FALLING_EDGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRIGGER_FALLING_EDGE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Interrupt mask for detecting falling edge </p>
+
+</div>
+</div>
+<a id="ab1f803abb36eac6342cad8854fbc1e10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1f803abb36eac6342cad8854fbc1e10">&#9670;&nbsp;</a></span>TRIGGER_RISING_EDGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRIGGER_RISING_EDGE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Interrupt mask for detecting rising edge </p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="acf3bdd59bb68456d3c8849452f541e87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf3bdd59bb68456d3c8849452f541e87">&#9670;&nbsp;</a></span>port_gpio_alternate_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void port_gpio_alternate_config </td>
+          <td>(</td>
+          <td class="paramtype">GPIO_TypeDef *&#160;</td>
+          <td class="paramname"><em>p_port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>alternate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure the alternate function of a GPIO. </p>
+<blockquote class="doxtable">
+<p><b>TO-DO alumnos:</b></p>
+<p>✅ 1. <b>Set the corresponding bit value of the BSRR register</b> to <em>set</em> or <em>reset</em> the output depending on the given <code>value</code>. <br  />
+&#160;&#160;&#160;&#160;💡 You might use the macros <code>HIGH</code> and <code>LOW</code>. <br  />
+&#160;&#160;&#160;&#160;💡 You might use the <code><a class="el" href="port__system_8h.html#ad8e7767483a0c8f878cab29ad46ec656">BIT_POS_TO_MASK(pin)</a></code> macro. <br  />
+</p>
+</blockquote>
+<dl class="section note"><dt>Note</dt><dd>The AFR register is a 2-element array representing GPIO alternate function high and low registers (<code>GPIOx_AFRH</code> and <code>GPIOx_AFRL</code>) AFRLy: Alternate function selection for port x pin y (y = 0..7) AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_port</td><td>Port of the GPIO (CMSIS struct like) </td></tr>
+    <tr><td class="paramname">pin</td><td>Pin/line of the GPIO (index from 0 to 15) </td></tr>
+    <tr><td class="paramname">alternate</td><td>Alternate function value according to the corresponding "Alternate Function" table of the datasheet. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae6ca17ba9c9d055d442cf1e4a73be046"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6ca17ba9c9d055d442cf1e4a73be046">&#9670;&nbsp;</a></span>port_system_delay_ms()</h2>
 
@@ -523,8 +625,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="port__system_8c_source.html#l00125">125</a> of file <a class="el" href="port__system_8c_source.html">port_system.c</a>.</p>
 
 </div>
 </div>
@@ -570,8 +670,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="port__system_8c_source.html#l00134">134</a> of file <a class="el" href="port__system_8c_source.html">port_system.c</a>.</p>
-
 </div>
 </div>
 <a id="ab415270cfcefc90ed8b8842da4e3d4c6"></a>
@@ -600,8 +698,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1eed701d50844fcd825c673999e44f2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1eed701d50844fcd825c673999e44f2a">&#9670;&nbsp;</a></span>port_system_gpio_config()</h2>
+<a id="aedba1c00f3e11b81226406c03db75c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedba1c00f3e11b81226406c03db75c14">&#9670;&nbsp;</a></span>port_system_gpio_config()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -610,7 +708,7 @@ Functions</h2></td></tr>
           <td class="memname">void port_system_gpio_config </td>
           <td>(</td>
           <td class="paramtype">GPIO_TypeDef *&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramname"><em>p_port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -670,7 +768,7 @@ Functions</h2></td></tr>
 This function enables the AHB1 peripheral clock. After reset, the peripheral clock (used for registers read/write access) is disabled and the application software has to enable this clock before using it.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>Port of the GPIO (CMSIS struct like) </td></tr>
+    <tr><td class="paramname">p_port</td><td>Port of the GPIO (CMSIS struct like) </td></tr>
     <tr><td class="paramname">pin</td><td>Pin/line of the GPIO (index from 0 to 15) </td></tr>
     <tr><td class="paramname">mode</td><td>Input, output, alternate, or analog </td></tr>
     <tr><td class="paramname">pupd</td><td>Pull-up, pull-down, or no-pull</td></tr>
@@ -686,8 +784,8 @@ This function enables the AHB1 peripheral clock. After reset, the peripheral clo
 
 </div>
 </div>
-<a id="ad0922d8c6498976ec4a714829a70824f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0922d8c6498976ec4a714829a70824f">&#9670;&nbsp;</a></span>port_system_gpio_config_alternate()</h2>
+<a id="a69b13031e799a6a96aa8143cb4432f94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69b13031e799a6a96aa8143cb4432f94">&#9670;&nbsp;</a></span>port_system_gpio_config_alternate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -696,7 +794,7 @@ This function enables the AHB1 peripheral clock. After reset, the peripheral clo
           <td class="memname">void port_system_gpio_config_alternate </td>
           <td>(</td>
           <td class="paramtype">GPIO_TypeDef *&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramname"><em>p_port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -739,7 +837,7 @@ AFRLy: Alternate function selection for port x pin y (y = 0..7) <br  />
 AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>Port of the GPIO (CMSIS struct like) </td></tr>
+    <tr><td class="paramname">p_port</td><td>Port of the GPIO (CMSIS struct like) </td></tr>
     <tr><td class="paramname">pin</td><td>Pin/line of the GPIO (index from 0 to 15) </td></tr>
     <tr><td class="paramname">alternate</td><td>Alternate function number (values from 0 to 15) according to table of the datasheet: "Table 11. Alternate function".</td></tr>
   </table>
@@ -754,8 +852,8 @@ AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
 
 </div>
 </div>
-<a id="ac9e19ee5de52fee7caf873af7ea6317d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9e19ee5de52fee7caf873af7ea6317d">&#9670;&nbsp;</a></span>port_system_gpio_config_exti()</h2>
+<a id="aaaa8d7afcf0ca35642667612a2dc0b27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa8d7afcf0ca35642667612a2dc0b27">&#9670;&nbsp;</a></span>port_system_gpio_config_exti()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -764,7 +862,7 @@ AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
           <td class="memname">void port_system_gpio_config_exti </td>
           <td>(</td>
           <td class="paramtype">GPIO_TypeDef *&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramname"><em>p_port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -811,9 +909,10 @@ AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
 </p><blockquote class="doxtable">
 <p>💡 <b>You can define your own masks for each pin value (not recommended), or you can use the <code><a class="el" href="port__system_8h.html#ad8e7767483a0c8f878cab29ad46ec656">BIT_POS_TO_MASK(pin)</a></code> macro to get the mask of a pin.</b> </p>
 </blockquote>
+<dl class="section warning"><dt>Warning</dt><dd>It is highly recommended to clean the corresponding bit of each register (<code>RSTR</code>, <code>FTSR</code>, <code>EMR</code>, <code>IMR</code>) before activating it.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>Port of the GPIO (CMSIS struct like) </td></tr>
+    <tr><td class="paramname">p_port</td><td>Port of the GPIO (CMSIS struct like) </td></tr>
     <tr><td class="paramname">pin</td><td>Pin/line of the GPIO (index from 0 to 15) </td></tr>
     <tr><td class="paramname">mode</td><td>Trigger mode can be a combination (OR) of: (i) direction: rising edge (0x01), falling edge (0x02), (ii) event request (0x04), or (iii) interrupt request (0x08). </td></tr>
   </table>
@@ -857,8 +956,6 @@ AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="port__system_8c_source.html#l00154">154</a> of file <a class="el" href="port__system_8c_source.html">port_system.c</a>.</p>
 
 </div>
 </div>
@@ -910,12 +1007,10 @@ AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="port__system_8c_source.html#l00148">148</a> of file <a class="el" href="port__system_8c_source.html">port_system.c</a>.</p>
-
 </div>
 </div>
-<a id="a8fdfc0b2269b65577aab87d7efc4a0ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fdfc0b2269b65577aab87d7efc4a0ff">&#9670;&nbsp;</a></span>port_system_gpio_read()</h2>
+<a id="a67c2ddb6c83b821abe663b86bc76a08e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67c2ddb6c83b821abe663b86bc76a08e">&#9670;&nbsp;</a></span>port_system_gpio_read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -924,7 +1019,7 @@ AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
           <td class="memname">bool port_system_gpio_read </td>
           <td>(</td>
           <td class="paramtype">GPIO_TypeDef *&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramname"><em>p_port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -951,7 +1046,7 @@ AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
 </blockquote>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>Port of the GPIO (CMSIS struct like) </td></tr>
+    <tr><td class="paramname">p_port</td><td>Port of the GPIO (CMSIS struct like) </td></tr>
     <tr><td class="paramname">pin</td><td>Pin/line of the GPIO (index from 0 to 15)</td></tr>
   </table>
   </dd>
@@ -962,8 +1057,8 @@ AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
 
 </div>
 </div>
-<a id="a7c755bd58b0daef4e39462f1315be2ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c755bd58b0daef4e39462f1315be2ce">&#9670;&nbsp;</a></span>port_system_gpio_toggle()</h2>
+<a id="ac917b3dece5f90ce4c76aaa36cec3553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac917b3dece5f90ce4c76aaa36cec3553">&#9670;&nbsp;</a></span>port_system_gpio_toggle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -972,7 +1067,7 @@ AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
           <td class="memname">void port_system_gpio_toggle </td>
           <td>(</td>
           <td class="paramtype">GPIO_TypeDef *&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramname"><em>p_port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -994,13 +1089,13 @@ AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
 <p>✅ 1. <b>Read the value of the GPIO.</b> <br  />
 <br  />
 ✅ 2. <b>Write the opposite value in the GPIO.</b> <br  />
-&#160;&#160;&#160;&#160;💡 You might use functions <code><a class="el" href="port__system_8h.html#a8fdfc0b2269b65577aab87d7efc4a0ff" title="Read the digital value of a GPIO.">port_system_gpio_read()</a></code> and <code><a class="el" href="port__system_8h.html#a5223335de29d50a1c21d7937ac355c9b" title="Write a digital value in a GPIO atomically.">port_system_gpio_write()</a></code> to help you. <br  />
+&#160;&#160;&#160;&#160;💡 You might use functions <code><a class="el" href="port__system_8h.html#a67c2ddb6c83b821abe663b86bc76a08e" title="Read the digital value of a GPIO.">port_system_gpio_read()</a></code> and <code><a class="el" href="port__system_8h.html#a7bc1d118b9ff134fe7f982a52b6a4049" title="Write a digital value in a GPIO atomically.">port_system_gpio_write()</a></code> to help you. <br  />
 &#160;&#160;&#160;&#160;💡 You might use the macros <code>HIGH</code> and <code>LOW</code>. <br  />
 </p>
 </blockquote>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>Port of the GPIO (CMSIS struct like) </td></tr>
+    <tr><td class="paramname">p_port</td><td>Port of the GPIO (CMSIS struct like) </td></tr>
     <tr><td class="paramname">pin</td><td>Pin/line of the GPIO (index from 0 to 15)</td></tr>
   </table>
   </dd>
@@ -1014,8 +1109,8 @@ AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
 
 </div>
 </div>
-<a id="a5223335de29d50a1c21d7937ac355c9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5223335de29d50a1c21d7937ac355c9b">&#9670;&nbsp;</a></span>port_system_gpio_write()</h2>
+<a id="a7bc1d118b9ff134fe7f982a52b6a4049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bc1d118b9ff134fe7f982a52b6a4049">&#9670;&nbsp;</a></span>port_system_gpio_write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1024,7 +1119,7 @@ AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
           <td class="memname">void port_system_gpio_write </td>
           <td>(</td>
           <td class="paramtype">GPIO_TypeDef *&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramname"><em>p_port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1057,7 +1152,7 @@ AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>You can use a +16 offset on the pin index and use the <code><a class="el" href="port__system_8h.html#ad8e7767483a0c8f878cab29ad46ec656">BIT_POS_TO_MASK(pin)</a></code> macro to get the mask when you go to clear a GPIO. Otherwise, you can calculate the pin mask first and then use a 16-position left shift of the mask.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>Port of the GPIO (CMSIS struct like) </td></tr>
+    <tr><td class="paramname">p_port</td><td>Port of the GPIO (CMSIS struct like) </td></tr>
     <tr><td class="paramname">pin</td><td>Pin/line of the GPIO (index from 0 to 15) </td></tr>
     <tr><td class="paramname">value</td><td>Boolean value to set the GPIO to HIGH (1, <code>true</code>) or LOW (0, <code>false</code>)</td></tr>
   </table>
@@ -1102,8 +1197,6 @@ AFRHy: Alternate function selection for port x pin y (y = 8..15)</dd></dl>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="port__system_8c_source.html#l00089">89</a> of file <a class="el" href="port__system_8c_source.html">port_system.c</a>.</p>
 
 </div>
 </div>
