@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['code_244',['code',['../structfsm__tx__t.html#a3d8bda2366aac49cd2ea916974c716a0',1,'fsm_tx_t']]],
-  ['current_5fstate_245',['current_state',['../structfsm__t.html#ab250e61dab922ea23423a06fd1e6ea34',1,'fsm_t']]]
+  ['dest_5fstate_89',['dest_state',['../structfsm__trans__t.html#af125a66cfa85df848aa173961218e809',1,'fsm_trans_t']]]
 ];
