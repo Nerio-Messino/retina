@@ -173,5 +173,18 @@ void port_system_gpio_exti_disable(uint8_t pin)
  */
 void SysTick_Handler(void)
 {
-  /* TO-DO alumnos */    
+  msTicks++;   
+}
+
+
+uint32_t port_system_get_millis()
+{
+  return msTicks;
+}
+
+//GPIO RELATED FUNCTIONS
+void port_system_gpio_config(GPIO_TypeDef* port,uint8_t pin,uint8_t mode,uint8_t pupd)
+{
+RCC->AHB1ENR |=RCC_AHB1ENR_GPIOAEN;
+
 }
