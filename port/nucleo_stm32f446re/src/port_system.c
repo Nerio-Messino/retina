@@ -186,5 +186,8 @@ uint32_t port_system_get_millis()
 void port_system_gpio_config(GPIO_TypeDef* port,uint8_t pin,uint8_t mode,uint8_t pupd)
 {
 RCC->AHB1ENR |=RCC_AHB1ENR_GPIOAEN;
-
+#define MODER5_MASK 0x0C00
+GPIOA-> MODER &= ~MODER5_MASK;
+#define GPIO_MODE_OUT 0x01U
+GPIOA - > MODER |= ( GPIO_MODE_OUT << 2* LINEA_5 );
 }
