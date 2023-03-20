@@ -187,7 +187,10 @@ void port_system_gpio_config(GPIO_TypeDef* port,uint8_t pin,uint8_t mode,uint8_t
 {
 RCC->AHB1ENR |=RCC_AHB1ENR_GPIOAEN;
 #define MODER5_MASK 0x0C00
-GPIOA-> MODER &= ~MODER5_MASK;
+GPIOA-> mode &= ~MODER5_MASK;
 #define GPIO_MODE_OUT 0x01U
-GPIOA - > MODER |= ( GPIO_MODE_OUT << 2* LINEA_5 );
+GPIOA-> mode |= ( GPIO_MODE_OUT << 2* LINEA_5 );
+#define BASE_PUPDR_MASK 0 x03
+#define PUPD5_MASK ( BASE_PUPDR_MASK << 2* LINEA_5 )
+GPIOA -> pupd &=  ~PUPD5_MASK ;
 }
