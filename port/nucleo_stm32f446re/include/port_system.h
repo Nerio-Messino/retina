@@ -48,6 +48,12 @@
 #define GPIO_PUPDR_PUP 0x01    /*!< GPIO no pull up */
 #define GPIO_PUPDR_PDOWN 0x02  /*!< GPIO no pull down */
 
+#define TRIGGER_RISING_EDGE
+#define TRIGGER_FALLING_EDGE
+#define TRIGGER_BOTH_EDGE
+
+# define LINEA_5 5
+
 /* Function prototypes and explanation -------------------------------------------------*/
 
 /**
