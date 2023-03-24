@@ -54,8 +54,10 @@
 #define TRIGGER_ENABLE_EVENT_REQ
 #define TRIGGER_ENABLE_INTERR_REQ
 
-# define LINEA_5 5
-
+#define LINEA_5 5
+#define MODER5_MASK 0x0C00
+#define BASE_PUPDR_MASK 0x03
+#define EXTI13_MASK 0x00F0
 /* Function prototypes and explanation -------------------------------------------------*/
 
 /**
