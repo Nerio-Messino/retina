@@ -186,10 +186,25 @@ uint32_t port_system_get_millis()
 void port_system_gpio_config(GPIO_TypeDef* port,uint8_t pin,uint8_t mode,uint8_t pupd)
 {
 RCC->AHB1ENR |=RCC_AHB1ENR_GPIOAEN;
-#define MODER5_MASK 0x0C00
-GPIOA-> mode &= ~MODER5_MASK;
-GPIOA-> mode |= ( GPIO_MODE_OUT << 2* LINEA_5);
-#define BASE_PUPDR_MASK 0x03
+
+GPIOA-> MODER &= ~MODER5_MASK;
+GPIOA-> MODER |= ( GPIO_MODE_OUT << 2* LINEA_5);
+
 #define PUPD5_MASK ( BASE_PUPDR_MASK << 2* LINEA_5 )
-GPIOA-> pupd &=  ~PUPD5_MASK ;
+GPIOA-> PUPDR &=  ~PUPD5_MASK ;
+}
+
+void port_system_gpio_config_exti(GPIO_TypeDef* port,uint8_t pin,uint8_t mode){
+  RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
+  GPIOA->MODER &=  ~MODER5_MASK;
+  SYSCFG->EXTICR[0] &= ~EXTI13_MASK;
+  SYSCFG->EXTICR[0] |= SYSCFG_EXTICR1_EXTI0;
+  SYSCFG->EXTICR[1] &= ~EXTI13_MASK;
+  SYSCFG->EXTICR[1] |= SYSCFG_EXTICR1_EXTI1;
+  SYSCFG->EXTICR[2] &= ~EXTI13_MASK;
+  SYSCFG->EXTICR[2] |= SYSCFG_EXTICR1_EXTI2;
+  SYSCFG->EXTICR[3] &= ~EXTI13_MASK;
+  SYSCFG->EXTICR[3] |= SYSCFG_EXTICR1_EXTI3;
+  
+
 }
