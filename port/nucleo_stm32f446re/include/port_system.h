@@ -61,6 +61,7 @@
 #define BASE_PUPDR_MASK 0x03
 #define EXTI13_MASK 0x00F0
 #define IDR5_MASK 0x20
+#define BSRR5_MASK 0x20 
 /* Function prototypes and explanation -------------------------------------------------*/
 
 /**

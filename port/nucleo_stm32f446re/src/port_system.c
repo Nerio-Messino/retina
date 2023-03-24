@@ -213,5 +213,10 @@ void port_system_gpio_config_exti(GPIO_TypeDef *port, uint8_t pin, uint32_t mode
 
 
 bool port_system_gpio_read(GPIO_TypeDef *port, uint8_t pin){
-  bool value = ( bool )(GPIOA ->IDR & IDR5_MASK );
+   bool value = ( bool )(GPIOA ->IDR & IDR5_MASK );
+}
+
+void port_system_gpio_write(GPIO_TypeDef *port, uint8_t pin, bool value){
+  GPIOA->BSRR = BSRR5_MASK ;
+  GPIOA->BSRR = BSRR5_MASK << 16; 
 }
