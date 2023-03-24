@@ -194,17 +194,24 @@ GPIOA-> MODER |= ( GPIO_MODE_OUT << 2* LINEA_5);
 GPIOA-> PUPDR &=  ~PUPD5_MASK ;
 }
 
-void port_system_gpio_config_exti(GPIO_TypeDef* port,uint8_t pin,uint8_t mode){
+void port_system_gpio_config_exti(GPIO_TypeDef *port, uint8_t pin, uint32_t mode){
   RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
   GPIOA->MODER &=  ~MODER5_MASK;
+  
   SYSCFG->EXTICR[0] &= ~EXTI13_MASK;
   SYSCFG->EXTICR[0] |= SYSCFG_EXTICR1_EXTI0;
-  SYSCFG->EXTICR[1] &= ~EXTI13_MASK;
+/*SYSCFG->EXTICR[1] &= ~EXTI13_MASK;
   SYSCFG->EXTICR[1] |= SYSCFG_EXTICR1_EXTI1;
   SYSCFG->EXTICR[2] &= ~EXTI13_MASK;
   SYSCFG->EXTICR[2] |= SYSCFG_EXTICR1_EXTI2;
   SYSCFG->EXTICR[3] &= ~EXTI13_MASK;
   SYSCFG->EXTICR[3] |= SYSCFG_EXTICR1_EXTI3;
-  
+*/
+  EXTI->RTSR |= TRIGGER_RISING_EDGE;
+  EXTI->IMR|= TRIGGER_ENABLE_INTERR_REQ;
+}
 
+
+bool port_system_gpio_read(GPIO_TypeDef *port, uint8_t pin){
+  bool value = ( bool )(GPIOA ->IDR & IDR5_MASK );
 }
