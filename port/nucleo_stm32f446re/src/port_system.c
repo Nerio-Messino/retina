@@ -220,3 +220,9 @@ void port_system_gpio_write(GPIO_TypeDef *port, uint8_t pin, bool value){
   GPIOA->BSRR = BSRR5_MASK ;
   GPIOA->BSRR = BSRR5_MASK << 16; 
 }
+
+void port_system_gpio_toggle(GPIO_TypeDef *port, uint8_t pin){
+ port_system_gpio_read(GPIOA,IDR5_MASK);
+ port_system_gpio_write(GPIOA, BSRR5_MASK, HIGH);
+ 
+}
