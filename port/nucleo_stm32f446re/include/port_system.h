@@ -48,11 +48,13 @@
 #define GPIO_PUPDR_PUP 0x01    /*!< GPIO no pull up */
 #define GPIO_PUPDR_PDOWN 0x02  /*!< GPIO no pull down */
 
-#define TRIGGER_RISING_EDGE
-#define TRIGGER_FALLING_EDGE
-#define TRIGGER_BOTH_EDGE
-#define TRIGGER_ENABLE_EVENT_REQ
-#define TRIGGER_ENABLE_INTERR_REQ
+#define TRIGGER_RISING_EDGE 0x01 /*Estos trigger configuran si las interrupciones son de subida*/
+#define TRIGGER_FALLING_EDGE 0x02 /*Igual pero con bajada*/
+#define TRIGGER_BOTH_EDGE 0x03 /* Este es un hibrido*/
+#define TRIGGER_ENABLE_EVENT_REQ 0x04 /* Este sirve para registrar eventos segun el valor de mode*/
+#define TRIGGER_ENABLE_INTERR_REQ 0x08 /*Same*/
+
+/*Creacion de mascaras auxiliares para limpiar registros*/
 
 #define LINEA_5 5
 #define MODER5_MASK 0x0C00
